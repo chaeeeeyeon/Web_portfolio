@@ -1299,7 +1299,7 @@ footer .inner h2{
     }
     .two .inner{
         flex-direction: column;
-        height: 170vh;
+        height: 180vh;
     }
     .two .inner .left{
         width: 100%;
@@ -1362,7 +1362,7 @@ footer .inner h2{
     }
     .four .inner{
         flex-direction: column;
-        height: 120vh;
+        height: 130vh;
     }
     .four .inner .left{
         width: 100%;
@@ -1391,7 +1391,7 @@ footer .inner h2{
         width: 90%;
     }
     .five .inner{
-        height: 120vh;
+        height: 130vh;
         flex-direction: column;
     }
     .five .inner .left{
@@ -1424,7 +1424,7 @@ footer .inner h2{
     }
     .six .inner{
         flex-direction: column;
-        height: 110vh;
+        height: 120vh;
     }
     .six .inner .left{
         width: 100%;
@@ -1450,7 +1450,7 @@ footer .inner h2{
         width: 90%;
     }
     .seven .inner{
-        height: 80vh;
+        height: 110vh;
         flex-direction: column;
     }
     .seven .inner .left{
@@ -1480,7 +1480,7 @@ footer .inner h2{
     }
     .eight .inner{
         flex-direction: column;
-        height: 100vh;
+        height: 110vh;
     }
     .eight .inner .left{
         width: 100%;

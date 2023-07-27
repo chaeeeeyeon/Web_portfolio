@@ -1,0 +1,1264 @@
+@font-face {
+    font-family: 'main';
+    src: url('../font/Lalezar-Regular.woff');
+}
+@font-face {
+    font-family: 'noto';
+    src: url('../font/NotoSans-Regular.woff');
+}
+@font-face {
+    font-family: 'black';
+    src: url('../font/NotoSansKR-Black.woff');
+}
+@keyframes slide{
+    from{
+        margin-left: -200px;
+        opacity: 0;
+    }
+    to{
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
+@keyframes disappear{
+    from{
+        margin-left: 0px;
+        opacity: 1;
+    }
+    to{
+        margin-left: -200px;
+        opacity: 0;
+    }
+}
+@keyframes loop {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'main';
+    color: white;
+    transition: all 0.7s;
+}
+img{
+    display: block;
+}
+html{
+    background-color: #121217;
+}
+header{
+    width: 100%;
+    height: 18vh;
+}
+header .inner{
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+}
+header .inner h1{
+    font-size: 0;
+}
+main{
+    width: 95%;
+    margin: 5% auto;
+}
+main .en{
+    margin-bottom: 10%;
+}
+main .en h2{
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    line-height: 8rem;
+}
+main .ko h2{
+    font-family: 'black';
+    font-size: 4rem;
+    letter-spacing: 0.4rem;
+    line-height: 8rem;
+}
+.first{
+    margin: 20% auto;
+    width: 80%;
+    position: relative;
+}
+.first .title{
+    font-size: 8rem;
+    animation: slide 1s ease-out;
+}
+.first .title h2{
+    color: #F6C0C0;
+    letter-spacing: 0.3rem;
+}
+.first .profile{
+    margin: 0 auto;
+}
+.first .profile img{
+    margin: 0 auto;
+}
+.first .text{
+    width: 80%;
+    margin: 10% auto;
+    text-align: center;
+}
+.first h3{
+    font-size: 4rem;
+    letter-spacing: 0.4rem;
+}
+.first h4{
+    font-size: 2.3rem;
+    letter-spacing: 0.3rem;
+    margin: 2% 0;
+}
+.first .resume{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.first .resume h3{
+    font-size: 2rem;
+}
+.first .resume img{
+    animation-name: loop;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+.two{
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+}
+.two .title{
+    font-size: 8rem;
+    margin-bottom: 3%;
+    animation: slide 1s ease-out;
+}
+.two .title h2{
+    color: #F6C0C0;
+    letter-spacing: 0.3rem;
+}
+.two .inner{
+    height: 110vh;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.two .inner .left{
+    width: 50%;
+}
+.two .inner .left h3{
+    font-size: 2.3rem;
+    letter-spacing: 0.3rem;
+}
+.two .inner .left h2{
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+}
+.two .inner .left p{
+    font-family: 'noto';
+    width: 90%;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    line-height: 3rem;
+    margin-top: 5%;
+}
+.two .inner .left .button{
+    margin-top: 20%;
+}
+.two .inner .right{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.two .inner .right .column01 img{
+    margin-bottom: 30%;
+}
+.two .inner .right .column01 img:nth-child(1){
+    margin-top: 30%;
+}
+.two .inner .right .column02 img{
+    margin-bottom: 30%;
+}
+.two .inner .right .column02 img:nth-child(1){
+    margin-top: 15%;
+}
+.three{
+    margin: 0 auto;
+    width: 80%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.three .inner{
+    height: 110vh;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.three .inner .left{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.three .inner .left .column01 img{
+    margin: 20% auto;
+}
+.three .inner .left .column02 img{
+    margin: 10% auto;
+}
+.three .inner .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.three .inner .right h3{
+    font-size: 2.3rem;
+    letter-spacing: 0.3rem;
+}
+.three .inner .right h2{
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+}
+.three .inner .right p{
+    font-family: 'noto';
+    width: 90%;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    line-height: 3rem;
+    margin-top: 5%;
+}
+.three .inner .right .button{
+    margin-top: 20%;
+}
+.four{
+    margin: 0 auto;
+    width: 80%;
+}
+.four .inner{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 110vh;
+    overflow: hidden;
+}
+.four .inner .left{
+    width: 50%;
+}
+.four .inner .left h3{
+    font-size: 2.3rem;
+    letter-spacing: 0.3rem;
+}
+.four .inner .left h2{
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+}
+.four .inner .left p{
+    font-family: 'noto';
+    width: 90%;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    line-height: 3rem;
+    margin-top: 10%;
+}
+.four .inner .left .button{
+    margin-top: 30%;
+}
+.four .inner .right{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.four .inner .right .column01{
+    margin: 0 auto;
+}
+.four .inner .right .column01 img{
+    margin-bottom: 30%;
+}
+.four .inner .right .column01 img:nth-child(1){
+    margin-top: 20%;
+}
+.four .inner .right figure{
+    margin-top: 10%;
+}
+.five{
+    margin: 0 auto;
+    width: 80%;
+}
+.five .inner{
+    height: 110vh;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.five .inner .left{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.five .inner .left .column01 img{
+    margin-bottom: 20%;
+}
+.five .inner .left .column01 img:nth-child(1){
+    margin-top: 20%;
+}
+.five .inner .left figure{
+    margin-top: 30%;
+}
+.five .inner .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.five .inner .right h3{
+    font-size: 2.3rem;
+    letter-spacing: 0.3rem;
+}
+.five .inner .right h2{
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+}
+.five .inner .right p{
+    font-family: 'noto';
+    width: 90%;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    line-height: 3rem;
+    margin-top: 10%;
+}
+.five .inner .right .button{
+    margin-top: 30%;
+}
+.six{
+    margin: 0 auto;
+    width: 80%;
+}
+.six .inner{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 110vh;
+    overflow: hidden;
+}
+.six .inner .left{
+    width: 50%;
+}
+.six .inner .left h3{
+    font-size: 2.3rem;
+    letter-spacing: 0.3rem;
+}
+.six .inner .left h2{
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+}
+.six .inner .left p{
+    font-family: 'noto';
+    width: 90%;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    line-height: 3rem;
+    margin-top: 10%;
+}
+.six .inner .left .button{
+    margin-top: 30%;
+}
+.six .inner .right{
+    width: 50%;
+}
+.six .inner .right .column01 .overlay{
+    margin: 10% auto;
+}
+.seven{
+    margin: 0 auto;
+    width: 80%;
+}
+.seven .inner{
+    height: 110vh;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.seven .inner .left{
+    width: 50%;
+}
+.seven .inner .left .column01 .find{
+    margin: 10% auto;
+    width: 476px;
+    height: 275px;
+    border-radius: 4%;
+}
+.seven .inner .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.seven .inner .right h3{
+    font-size: 2.3rem;
+    letter-spacing: 0.3rem;
+}
+.seven .inner .right h2{
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+}
+.seven .inner .right p{
+    font-family: 'noto';
+    width: 90%;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    line-height: 3rem;
+    margin-top: 10%;
+    text-align: end;
+}
+.seven .inner .right .button{
+    margin-top: 30%;
+}
+.eight{
+    margin: 0 auto;
+    width: 80%;
+}
+.eight .inner{
+    height: 110vh;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    background: url('../img/starbackground.png') fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.eight .inner .left{
+    width: 50%;
+}
+.eight .inner .left h3{
+    font-size: 2.3rem;
+    letter-spacing: 0.3rem;
+}
+.eight .inner .left h2{
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+}
+.eight .inner .left p{
+    font-family: 'noto';
+    width: 90%;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    line-height: 3rem;
+    margin-top: 10%;
+}
+.eight .inner .left .button{
+    margin-top: 30%;
+}
+.nine{
+    margin: 20% auto;
+    width: 95%;
+}
+.nine .title{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nine .title h3{
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+}
+.nine .title h2{
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    color: #F6C0C0;
+}
+.nine .inner{
+    background: url('../img/grid.png') fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.nine .inner img{
+    width: 95%;
+    margin: 0 auto;
+}
+footer{
+    width: 95%;
+    margin: 0 auto;
+}
+footer .title{
+    width: 80%;
+    font-size: 8rem;
+}
+footer .title h2{
+    color: #F6C0C0;
+    letter-spacing: 0.3rem;
+}
+footer .inner p{
+    width: 50%;
+    font-family: 'noto';
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+}
+footer .inner img{
+    margin: 0 auto;
+}
+footer .inner .end{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 5% 0;
+}
+footer .inner h2{
+    font-size: 5rem;
+    letter-spacing: 0.4rem;
+}
+@media screen and (min-width:1024px) and (max-width:1200px){
+    main .ko h2{
+        font-size: 3.5rem;
+    }
+    .first .title{
+        font-size: 6rem;
+    }
+    .two .title{
+        font-size: 6rem;
+    }
+    .two .inner{
+        flex-direction: column;
+        height: 200vh;
+    }
+    .two .inner .left{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .two .inner .left .button{
+        margin-top: 10%;
+    }
+    .two .inner .right{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .three .inner{
+        height: 200vh;
+        flex-direction: column;
+    }
+    .three .inner .left{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .three .inner .right{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .three .inner .right .button{
+        margin-top: 10%;
+    }
+    .four .inner{
+        flex-direction: column;
+        height: 150vh;
+    }
+    .four .inner .left{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .four .inner .left .button{
+        margin-top: 10%;
+    }
+    .four .inner .right{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .five .inner{
+        height: 160vh;
+        flex-direction: column;
+    }
+    .five .inner .left{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .five .inner .right{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .five .inner .right .button{
+        margin-top: 10%;
+    }
+    .six .inner{
+        flex-direction: column;
+        height: 120vh;
+    }
+    .six .inner .left{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .six .inner .left .button{
+        margin-top: 10%;
+    }
+    .six .inner .right{
+        width: 80%;
+        margin: 0 auto;    
+    }
+    .seven .inner{
+        height: 120vh;
+        flex-direction: column;
+    }
+    .seven .inner .left{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .seven .inner .right{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .seven .inner .right .button{
+        margin-top: 10%;
+    }
+    .eight .inner{
+        flex-direction: column;
+        height: 120vh;
+    }
+    .eight .inner .left{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .eight .inner .left .button{
+        margin-top: 10%;
+    }
+    .eight .inner .right{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .eight .inner .right .iphone{
+        display: block;
+        width: 350px;
+        height: 500px;
+        margin: 0 auto;
+    }
+    .nine .title h3{
+        display: none;
+    }
+    .nine .title h2{
+        font-size: 3.5rem;
+    }
+    footer .title{
+        font-size: 6rem;
+        width: 100%;
+    }
+    footer .inner p{
+        width: 70%;
+    }
+    footer .inner img{
+        width: 90%;
+    }
+    footer .inner h2{
+        font-size: 4.8rem;
+    }
+}
+@media screen and (min-width:767px) and (max-width:1023px){
+    main .en h2{
+        font-size: 3rem;
+    }
+    main .ko h2{
+        font-size: 2.8rem;
+    }
+    .first .title{
+        font-size: 5rem;
+    }
+    .two .title{
+        font-size: 5rem;
+    }
+    .two .inner{
+        flex-direction: column;
+        height: 255vh;
+    }
+    .two .inner .left{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .two .inner .left .button{
+        margin-top: 10%;
+    }
+    .two .inner .right{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .three .inner{
+        height: 255vh;
+        flex-direction: column;
+    }
+    .three .inner .left{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .three .inner .right{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .three .inner .right .button{
+        margin-top: 10%;
+    }
+    .four .inner{
+        flex-direction: column;
+        height: 220vh;
+    }
+    .four .inner .left{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .four .inner .left .button{
+        margin-top: 10%;
+    }
+    .four .inner .right{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .five .inner{
+        height: 220vh;
+        flex-direction: column;
+    }
+    .five .inner .left{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .five .inner .right{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .five .inner .right .button{
+        margin-top: 10%;
+    }
+    .six .inner{
+        flex-direction: column;
+        height: 180vh;
+    }
+    .six .inner .left{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .six .inner .left .button{
+        margin-top: 10%;
+    }
+    .six .inner .right{
+        width: 90%;
+        margin: 0 auto; 
+    }
+    .seven .inner{
+        height: 150vh;
+        flex-direction: column;
+    }
+    .seven .inner .left{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .seven .inner .right{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .seven .inner .right .button{
+        margin-top: 10%;
+    }
+    .eight .inner{
+        flex-direction: column;
+        height: 140vh;
+    }
+    .eight .inner .left{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .eight .inner .left .button{
+        margin-top: 10%;
+    }
+    .eight .inner .right{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .eight .inner .right .iphone{
+        display: block;
+        width: 350px;
+        height: 500px;
+        margin: 0 auto;
+    }
+    .nine .title h3{
+        display: none;
+    }
+    .nine .title h2{
+        font-size: 3.5rem;
+    }
+    footer .title{
+        font-size: 5rem;
+        width: 100%;
+    }
+    footer .inner p{
+        width: 70%;
+    }
+    footer .inner img{
+        width: 90%;
+    }
+    footer .inner h2{
+        font-size: 4.5rem;
+    }
+}
+@media screen and (min-width:540px) and (max-width:766px){
+    main .en h2{
+        font-size: 2.5rem;
+        letter-spacing: 0.3rem;
+        line-height: 7rem;
+    }
+    main .ko h2{
+        font-size: 2.2rem;
+        letter-spacing: 0.3rem;
+        line-height: 7rem;
+    }
+    .first .title{
+        font-size: 4rem;
+    }
+    .first .text{
+        width: 100%;
+        margin: 20% auto;
+    }
+    .first .text h3{
+        font-size: 3rem;
+        margin: 10% auto;
+    }
+    .first .text h4{
+        font-size: 2rem;
+    }
+    .two .title{
+        font-size: 4rem;
+    }
+    .two .inner{
+        flex-direction: column;
+        height: 220vh;
+    }
+    .two .inner .left{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .two .inner .left .button{
+        margin-top: 10%;
+    }
+    .two .inner .right{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .two .inner .right .column01 img{
+        width: 100%;
+    }
+    .two .inner .right .column02 img{
+        width: 100%;
+    }
+    .three .inner{
+        height: 260vh;
+        flex-direction: column;
+    }
+    .three .inner .left{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .three .inner .left .column01 img{
+        width: 100%;
+    }
+    .three .inner .left .column02 img{
+        width: 100%;
+    }
+    .three .inner .right{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .three .inner .right .button{
+        margin-top: 10%;
+    }
+    .four .inner{
+        flex-direction: column;
+        height: 200vh;
+    }
+    .four .inner .left{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .four .inner .left .button{
+        margin-top: 10%;
+    }
+    .four .inner .right{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .four .inner .right .column01 img{
+        width: 100%;
+    }
+    .four .inner .right .column02 img{
+        width: 100%;
+    }
+    .five .inner{
+        height: 200vh;
+        flex-direction: column;
+    }
+    .five .inner .left{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .five .inner .left .column01 img{
+        width: 100%;
+    }
+    .five .inner .left .column02 img{
+        width: 100%;
+    }
+    .five .inner .right{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .five .inner .right .button{
+        margin-top: 10%;
+    }
+    .six .inner{
+        flex-direction: column;
+        height: 170vh;
+    }
+    .six .inner .left{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .six .inner .left .button{
+        margin-top: 10%;
+    }
+    .six .inner .right{
+        width: 100%;
+        margin: 0 auto; 
+    }
+    .seven .inner{
+        height: 150vh;
+        flex-direction: column;
+    }
+    .seven .inner .left{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .seven .inner .right{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .seven .inner .right .button{
+        margin-top: 10%;
+    }
+    .eight .inner{
+        flex-direction: column;
+        height: 150vh;
+    }
+    .eight .inner .left{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .eight .inner .left .button{
+        margin-top: 10%;
+    }
+    .eight .inner .right{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .eight .inner .right .iphone{
+        display: block;
+        width: 350px;
+        height: 500px;
+        margin: 0 auto;
+    }
+    .nine .title h3{
+        display: none;
+    }
+    .nine .title h2{
+        font-size: 3.3rem;
+    }
+    footer .title{
+        font-size: 4rem;
+        width: 100%;
+    }
+    footer .inner p{
+        width: 80%;
+        font-size: 1.3rem;
+    }
+    footer .inner img{
+        width: 90%;
+    }
+    footer .inner h2{
+        font-size: 4.2rem;
+    }
+}
+@media screen and (max-width:539px) {
+    main .en h2{
+        font-size: 2.5rem;
+        letter-spacing: 0.3rem;
+        line-height: 7rem;
+    }
+    main .ko h2{
+        font-size: 2.2rem;
+        letter-spacing: 0.3rem;
+        line-height: 7rem;
+    }
+    .first .title{
+        font-size: 4rem;
+    }
+    .first .profile img{
+        width: 90%;
+    }
+    .first .text{
+        width: 100%;
+        margin: 20% auto;
+    }
+    .first .text h3{
+        font-size: 3rem;
+        margin: 10% auto;
+    }
+    .first .text h4{
+        font-size: 2rem;
+    }
+    .two .title{
+        font-size: 4rem;
+    }
+    .two .inner{
+        flex-direction: column;
+        height: 250vh;
+    }
+    .two .inner .left{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .two .inner .left h3{
+        font-size: 2.5rem;
+    }
+    .two .inner .left h2{
+        font-size: 2.6rem;
+    }
+    .two .inner .left p{
+        font-size: 1.5rem;
+    }
+    .two .inner .left .button{
+        margin-top: 10%;
+    }
+    .two .inner .right{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .two .inner .right .column01 img{
+        width: 90%;
+    }
+    .two .inner .right .column02 img{
+        width: 90%;
+    }
+    .three .inner{
+        height: 240vh;
+        flex-direction: column;
+    }
+    .three .inner .left{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .three .inner .left .column01 img{
+        width: 90%;
+    }
+    .three .inner .left .column02 img{
+        width: 90%;
+    }
+    .three .inner .right{
+        width: 100%;
+        margin: 0 auto;
+        text-align: end;
+    }
+    .three .inner .right .button{
+        margin-top: 10%;
+    }
+    .three .inner .right h3{
+        font-size: 2.5rem;
+    }
+    .three .inner .right h2{
+        font-size: 2.6rem;
+    }
+    .three .inner .right p{
+        font-size: 1.5rem;
+    }
+    .four .inner{
+        flex-direction: column;
+        height: 180vh;
+    }
+    .four .inner .left{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .four .inner .left h3{
+        font-size: 2.5rem;
+    }
+    .four .inner .left h2{
+        font-size: 2.6rem;
+    }
+    .four .inner .left p{
+        font-size: 1.5rem;
+    }
+    .four .inner .left .button{
+        margin-top: 10%;
+    }
+    .four .inner .right{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .four .inner .right .column01 img{
+        width: 90%;
+    }
+    .four .inner .right .column02 img{
+        width: 90%;
+    }
+    .five .inner{
+        height: 170vh;
+        flex-direction: column;
+    }
+    .five .inner .left{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .five .inner .left .column01 img{
+        width: 90%;
+    }
+    .five .inner .left .column02 img{
+        width: 90%;
+    }
+    .five .inner .right{
+        width: 100%;
+        margin: 0 auto;
+        text-align: end;
+    }
+    .five .inner .right h3{
+        font-size: 2.5rem;
+    }
+    .five .inner .right h2{
+        font-size: 2.6rem;
+    }
+    .five .inner .right p{
+        font-size: 1.5rem;
+    }
+    .five .inner .right .button{
+        margin-top: 10%;
+    }
+    .six .inner{
+        flex-direction: column;
+        height: 160vh;
+    }
+    .six .inner .left{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .six .inner .left h3{
+        font-size: 2.5rem;
+    }
+    .six .inner .left h2{
+        font-size: 2.6rem;
+    }
+    .six .inner .left p{
+        font-size: 1.5rem;
+    }
+    .six .inner .left .button{
+        margin-top: 10%;
+    }
+    .six .inner .right{
+        width: 100%;
+        margin: 0 auto; 
+    }
+    .six .inner .right .column01 img{
+        width: 90%;
+    }
+    .seven .inner{
+        height: 120vh;
+        flex-direction: column;
+    }
+    .seven .inner .left{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .seven .inner .left .column01 .find{
+        width: 100%;
+        height: 90%;
+    }
+    .seven .inner .right{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .seven .inner .right h3{
+        font-size: 2.5rem;
+    }
+    .seven .inner .right h2{
+        font-size: 2.6rem;
+    }
+    .seven .inner .right p{
+        font-size: 1.5rem;
+    }
+    .seven .inner .right .button{
+        margin-top: 10%;
+    }
+    .eight .inner{
+        flex-direction: column;
+        height: 140vh;
+    }
+    .eight .inner .left{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .eight .inner .left h3{
+        font-size: 2.5rem;
+    }
+    .eight .inner .left h2{
+        font-size: 2.6rem;
+    }
+    .eight .inner .left p{
+        font-size: 1.5rem;
+    }
+    .eight .inner .left .button{
+        margin-top: 10%;
+    }
+    .eight .inner .right{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .eight .inner .right .iphone{
+        display: block;
+        width: 350px;
+        height: 400px;
+        margin: 0 auto;
+    }
+    .nine .title h3{
+        display: none;
+    }
+    .nine .title h2{
+        font-size: 3rem;
+    }
+    footer .title{
+        font-size: 4rem;
+        width: 100%;
+    }
+    footer .inner p{
+        width: 90%;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    footer .inner img{
+        width: 90%;
+    }
+    footer .inner h2{
+        font-size: 3rem;
+    }
+}

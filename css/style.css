@@ -1262,3 +1262,272 @@ footer .inner h2{
         font-size: 3rem;
     }
 }
+@media screen and (max-width:400px){
+    header .inner img{
+        width: 140px;
+        height: 120px;
+    }
+    main .en h2{
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        line-height: 4rem;
+    }
+    main .ko h2{
+        font-size: 1.8rem;
+        letter-spacing: 0.2rem;
+        line-height: 4rem; 
+    }
+    .first .title{
+        font-size: 3.3rem;
+    }
+    .first .profile img{
+        width: 90%;
+    }
+    .first .text{
+        width: 100%;
+        margin: 20% auto;
+    }
+    .first .text h3{
+        font-size: 2.2rem;
+        margin: 10% auto;
+    }
+    .first .text h4{
+        font-size: 1.8rem;
+    }
+    .two .title{
+        font-size: 3.3rem;
+    }
+    .two .inner{
+        flex-direction: column;
+        height: 170vh;
+    }
+    .two .inner .left{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .two .inner .left h3{
+        font-size: 2.2rem;
+    }
+    .two .inner .left h2{
+        font-size: 2.3rem;
+    }
+    .two .inner .left p{
+        font-size: 1.3rem;
+    }
+    .two .inner .left .button{
+        margin-top: 10%;
+    }
+    .two .inner .right{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .two .inner .right .column01 img{
+        width: 90%;
+    }
+    .two .inner .right .column02 img{
+        width: 90%;
+    }
+    .three .inner{
+        height: 170vh;
+        flex-direction: column;
+    }
+    .three .inner .left{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .three .inner .left .column01 img{
+        width: 90%;
+    }
+    .three .inner .left .column02 img{
+        width: 90%;
+    }
+    .three .inner .right{
+        width: 100%;
+        margin: 0 auto;
+        text-align: end;
+    }
+    .three .inner .right .button{
+        margin-top: 10%;
+    }
+    .three .inner .right h3{
+        font-size: 2.2rem;
+    }
+    .three .inner .right h2{
+        font-size: 2.3rem;
+    }
+    .three .inner .right p{
+        font-size: 1.3rem;
+    }
+    .four .inner{
+        flex-direction: column;
+        height: 120vh;
+    }
+    .four .inner .left{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .four .inner .left h3{
+        font-size: 2.2rem;
+    }
+    .four .inner .left h2{
+        font-size: 2.3rem;
+    }
+    .four .inner .left p{
+        font-size: 1.3rem;
+    }
+    .four .inner .left .button{
+        margin-top: 10%;
+    }
+    .four .inner .right{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .four .inner .right .column01 img{
+        width: 90%;
+    }
+    .four .inner .right .column02 img{
+        width: 90%;
+    }
+    .five .inner{
+        height: 120vh;
+        flex-direction: column;
+    }
+    .five .inner .left{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .five .inner .left .column01 img{
+        width: 90%;
+    }
+    .five .inner .left .column02 img{
+        width: 90%;
+    }
+    .five .inner .right{
+        width: 100%;
+        margin: 0 auto;
+        text-align: end;
+    }
+    .five .inner .right h3{
+        font-size: 2.2rem;
+    }
+    .five .inner .right h2{
+        font-size: 2.3rem;
+    }
+    .five .inner .right p{
+        font-size: 1.3rem;
+    }
+    .five .inner .right .button{
+        margin-top: 10%;
+    }
+    .six .inner{
+        flex-direction: column;
+        height: 110vh;
+    }
+    .six .inner .left{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .six .inner .left h3{
+        font-size: 2.2rem;
+    }
+    .six .inner .left h2{
+        font-size: 2.3rem;
+    }
+    .six .inner .left p{
+        font-size: 1.3rem;
+    }
+    .six .inner .left .button{
+        margin-top: 10%;
+    }
+    .six .inner .right{
+        width: 100%;
+        margin: 0 auto; 
+    }
+    .six .inner .right .column01 img{
+        width: 90%;
+    }
+    .seven .inner{
+        height: 80vh;
+        flex-direction: column;
+    }
+    .seven .inner .left{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .seven .inner .left .column01 .find{
+        width: 100%;
+        height: 90%;
+    }
+    .seven .inner .right{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .seven .inner .right h3{
+        font-size: 2.2rem;
+    }
+    .seven .inner .right h2{
+        font-size: 2.3rem;
+    }
+    .seven .inner .right p{
+        font-size: 1.3rem;
+    }
+    .seven .inner .right .button{
+        margin-top: 10%;
+    }
+    .eight .inner{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .eight .inner .left{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .eight .inner .left h3{
+        font-size: 2.2rem;
+    }
+    .eight .inner .left h2{
+        font-size: 2.3rem;
+    }
+    .eight .inner .left p{
+        font-size: 1.3rem;
+    }
+    .eight .inner .left .button{
+        margin-top: 10%;
+    }
+    .eight .inner .right{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .eight .inner .right .iphone{
+        display: block;
+        width: 300px;
+        height: 350px;
+        margin: 0 auto;
+    }
+    .nine .title h3{
+        display: none;
+    }
+    .nine .title h2{
+        font-size: 2.5rem;
+    }
+    footer .title{
+        font-size: 3.3rem;
+        width: 100%;
+    }
+    footer .inner p{
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+    footer .inner img{
+        width: 100%;
+    }
+    footer .inner h2{
+        font-size: 2rem;
+    }
+
+}
